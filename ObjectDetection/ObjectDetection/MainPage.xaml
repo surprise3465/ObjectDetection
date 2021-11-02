@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ObjectDetection.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <StackLayout Padding="5">
+        <Label
+            x:Name="ImagePath"
+            FontSize="Medium"
+            Text="Tiny-yolo2 Model" />
+        <Image x:Name="PhotoImage" />
+        <Button
+            x:Name="btnSelectPic"
+            BackgroundColor="DodgerBlue"
+            Clicked="PredictButton_Clicked"
+            Text="拍照识别"
+            TextColor="White" />
+    </StackLayout>
+
+</ContentPage>
